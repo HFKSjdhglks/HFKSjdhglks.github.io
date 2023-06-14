@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Playfair:ital,wght@1,900&family=Roboto+Slab:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Playfair:ital,wght@1,900&family=Roboto+Mono:wght@100&display=swap');
+h1 {
+    font-family: 'Playfair';
+    font-size: 55px;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+img {
+    width: 75px;
+    float: left;
+    color: white;
+}
+.a {
+    height: 670px;
+    width: 100%;
+    transform: translate(0%, -1%);
+}
+h2 {
+    position: absolute;
+    color: white;
+    font-family: 'Playfair';
+    font-size: 40px;
+    transform: translate(40%, 20%);
+}
+h3 {
+    position: absolute;
+    color: white;
+    font-family: 'Playfair';
+    transform: translate(300%, 380%);
+    font-size: 20px; 
+}
+h5 {
+    font-family: 'Roboto Mono';
+   text-align: center;
+    color: white;
+    background-color: rgb(60, 147, 250);
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.b {
+    height: 300px;
+    width: 100%;
+    transform: translate(-2px, 0px);
+    border:rgb(255, 255, 255) double;
+    border-width: 5px;
+}
+h6 {
+    font-family: 'Roboto Mono';
+    text-align: left;
+    font-size: 25px;
+}
+p {
+    font-family: 'Roboto Mono';
+    text-align: left;
+    font-size: 25px;
+
+}
+button {
+    background-color: rgb(197, 168, 62);
+    color: rgb(255, 255, 255);
+}

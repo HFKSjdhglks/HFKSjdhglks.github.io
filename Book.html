@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Bookings</title>
+</head>
+<body style="background-color: rgb(60, 147, 250);">
+<h5>
+Book A Flight
+</h5>
+<img class="b" src="SHUT.jpg" alt="nop">
+<h6>
+    From
+    <select id="fromCountry">
+        <option value="Adelaide">Adelaide</option>
+        <option value="Auckland">Auckland</option>
+        <option value="Brisbane">Brisbane</option>
+        <option value="Canberra">Canberra</option>
+        <option value="Darwin">Darwin</option>
+        <option value="Hobart">Hobart</option>
+        <option value="Melbourne">Melbourne</option>
+        <option value="Perth">Perth</option>
+        <option value="Sydney">Sydney</option>
+        <option value="Wellington">Wellington</option>
+      </select>
+    To
+    <select id="toCountry">
+        <option value="Amsterdam">Amsterdam, NET</option>
+        <option value="Athens">Athens, GRE</option>
+        <option value="Bangkok">Bangkok, THA</option>
+        <option value="Berlin">Berlin, GER</option>
+        <option value="Buenos Aires">Buenos Aires, ARG</option>
+        <option value="Cairo">Cairo, EGY</option>
+        <option value="Chennai">Chennai, IND</option>
+        <option value="Dehli">Dehli, IND</option>
+        <option value="Dublin">Dublin, IRE</option>
+        <option value="Ho Chi Minh City">Ho Chi Minh City, VIE</option>
+        <option value="Istanbul">Istanbul, TUR</option>
+        <option value="Jakarta">Jakarta, INDO</option>
+        <option value="Kuala Lumpur">Kuala Lumpur, MAL</option>
+        <option value="Lisbon">Lisbon, POR</option>
+        <option value="London">London, ENG</option>
+        <option value="Los Angeles">Los Angeles, USA</option>
+        <option value="Madrid">Madrid, SPA</option>
+        <option value="Mexico City">Mexico City, MEX</option>
+        <option value="Moscow">Moscow, RUS</option>
+        <option value="New York">New York, USA</option>
+        <option value="Paris">Paris, FRA</option>
+        <option value="Rio De Janeiro">Rio De Janeiro, BRA</option>
+        <option value="Riyadh">Riyadh, SAU</option>
+        <option value="Rome">Rome, ITA</option>
+        <option value="Seoul">Seoul, SOU</option>
+        <option value="Shanghai">Shanghai, CHI</option>
+        <option value="Singapore">Singapore, SIN</option>
+        <option value="Tokyo">Tokyo, JAP</option>
+        <option value="Toronto">Toronto, CAN</option>
+      </select>
+
+
+         <select id="timeTravel" onchange="updateTime()">
+          <option value="departure">Depart</option>
+        </select>
+        <input type="date" id="departureDate" onchange="updateTime()">
+        
+        <select id="whenBack" onchange="updateTime()">
+          <option value="return">Return</option>
+        </select>
+
+        
+        <input id="passengerInput" type="number" onchange="updatePassenger()">
+        <span id="passengerLabel">Number Of Passengers</span>
+        
+        <p>
+          Flight from
+          <span id="flight">Adelaide</span> to
+          <span id="destination">Amsterdam</span>
+          With <span id="amount">0</span> passengers
+          <span id="time">on dd / mm / yyyy,</span>
+        </p>
+        
+        <script>
+          function updateTime() {
+            var departureValue = document.getElementById("timeTravel").value;
+            var departureDate = document.getElementById("departureDate").value;
+        
+            time.textContent = departureValue + " on " + departureDate;
+          }
+        
+          function updatePassenger() {
+            amount.textContent = passengerInput.value;
+          }
+          function one () {
+            flight.textContent = fromCountry.value
+          }
+          fromCountry.onchange = one;
+          function two () {
+            destination.textContent = toCountry.value
+          }
+          toCountry.onchange = two;
+        </script>
+        </select>
+        Search For Flights
+        <button onclick="history.back()">GO BACK</button>
+</h6>
+</body>
+</html>
